@@ -21,8 +21,8 @@ const Home: NextPage = () => {
     <div>
       <NavBar />
       <p>Esta es la pagina de home</p>
-      {productList.map((product) => (
-        <div key={product.id}>{product.name}</div>
+      {productList.map((product: TProduct) => (
+        <div key={product?.id}>{product?.name}</div>
       ))}
     </div>
   )
